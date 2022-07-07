@@ -8,7 +8,9 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import LogIn from './Components/LogIn/LogIn';
 import News from './Components/News/News';
+import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
 import Services from './Components/services/Services';
 import AuthProvider from './context/AuthProvider';
 // import Slider from './Components/Slider/Slider';
@@ -26,9 +28,11 @@ function App() {
             <Route path="AboutUs" element={<AboutUs />} />
             <Route path="ContactUs" element={<ContactUs />} />
             <Route path="Services" element={<PrivateRoute><Services /></PrivateRoute>} />
+            <Route path="Service/:serviceId" element={<ServiceDetail />} />
             <Route path="Doctors" element={<Doctors />} />
             <Route path="News" element={<News />} />
             <Route path="LogIn" element={<LogIn />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer></Footer>
         </BrowserRouter>

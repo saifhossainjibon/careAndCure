@@ -10,7 +10,7 @@ const ContactUs = () => {
             <div className='contact-us my-4'>
                 <h1 className='text-4xl font-bold mx-24'>Contact Us</h1>
             </div>
-            <div className='grid grid-rows-2 grid-flow-col gap-4 container mx-auto'>
+            <div className='md:grid grid-rows-2 grid-flow-col gap-4 container mx-auto'>
                 <div className='row-span-2'>
                     <div className="flex flex-col items-center bg-white rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 ">
                         <img className="object-cover w-16 rounded-t-lg md:h-auto md:w-12 md:rounded-none md:rounded-l-lg" src={home} alt="" />
